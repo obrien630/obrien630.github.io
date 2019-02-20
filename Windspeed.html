@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Web Visualization Dashboard (Latitude)</title>
+
+    <!-- Import Bootstrap and CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+</head>
+
+<body class="body">
+                <nav class="navbar navbar-default">
+                        <div class="container">
+
+                            <!--Begin Active Navigation-->
+                            <div class="navbar-header">
+                                <a class="navbar-brand" href="Index.html"> 
+                                <span class="nav-color navbaractive">Latitude</span></a>
+                            </div>
+                            <!--End Active Navigation-->
+                            
+                            <div class="nav navbar-nav navbar-right">
+                                <div class="dropdown">
+                                    <button class="dropbtn">Plots</button>
+                                    <div class="dropdown-content">
+                                            <li><a href="MaxTemperature.html">Max Temperature</a></li>
+                                            <li><a href="Humidity.html">Humidity</a></li>
+                                            <li><a href="Cloudiness.html">Cloudiness</a></li>
+                                            <li><a href="Windspeed.html">Wind Speed</a></li>
+                                    </div>
+                                </div>
+                                
+                                <li><a href="Comparisons.html"> Comparison</a></li>
+                                <li><a href="data.html"> Data</a></li>
+                            </div>
+                        </div> 
+                </nav>
+
+                <div class= "container">
+                    <div class= "row">
+
+                        <!--Begin Average Wind Speed Summary Box-->
+                        <div class= "col-md-7">
+                            <div class="whiteback">
+                                <h1 style = "text-align: center" class ="stronger">Wind Speed</h1>
+                                <hr>
+                                <div id="summarytext">
+                                    <img id="img-responsive" src= "Resources/assets/images/wind_speed.png" style="width:100%;" alt= "Average Windspeed">
+                                    <p>
+                                            No significant correlation was found between latitude and wind speed. Frequency of wind speed, however, can be observed. The most common observation was speeds between 0 and 10 mph. Observations decrease in frequency as you increase wind speed with rare occurrences of wind speeds greater than 30 mph.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--End Average Wind Speed Summary Box-->
+
+                        <!--Begin Visualizations Box-->
+                        <div class= "col-md-5">
+                                <div class= "side-box">
+                                    <h2 style = "text-align: center" class= "stronger">Visualizations</h2>
+                                    <hr>
+                                    <div class="row" style = "padding-bottom: 10px">
+                                            <div class="col-md-6">
+                                                <h3 style = "text-align: center" class="stronger">vs. Max Temperature</h3>
+                                                <a href="MaxTemperature.html"><img class = "img img-responsive" src="Resources/assets/images/max_temperature.png" style="width:100%"></a></div>
+                                            <div class="col-md-6">
+                                                <h3 style = "text-align: center" class="stronger">vs. Humidity</h3>
+                                                <a href="Humidity.html"><img class = "img img-responsive" src="Resources/assets/images/humidity.png" style="width:100%"></a></div>
+                                        </div>
+        
+                                        <div class="row" style = "padding-bottom: 10px">
+                                            <div class="col-md-6">
+                                                <h3 style = "text-align: center" class="stronger">vs. Cloudiness</h3>
+                                                <a href="Cloudiness.html"><img class = "img img-responsive" src="Resources/assets/images/cloudiness.png" style="width:100%"></a></div>
+                                            <div class="col-md-6">
+                                                <h3 style = "text-align: center" class="stronger">vs. Wind Speed</h3>
+                                                <a href="Windspeed.html"><img class = "img img-responsive" src="Resources/assets/images/wind_speed.png" style="width:100%"></a></div>
+                                    </div>
+                                 </div>
+                            </div>
+                            <!--End Visualizations Box-->
+
+                    </div>
+                </div>
+            
+                <!--Begin Footer-->
+                <footer>
+                        <p style = "text-align:center" class="footer_font stronger"> Ⓒ Copyright Coding Bootcamp 2018</p>   
+                </footer>
+                <!--End Footer-->
+</body>
+</html>

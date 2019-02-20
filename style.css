@@ -1,0 +1,255 @@
+/* Body */
+.body{
+    background-color: lightgray
+}
+
+.stronger{
+    font-weight: bold;
+}
+
+.text {
+    float: right;
+}
+
+.whiteback{
+    background-color: white;
+}
+
+p{
+    font-size: 19px;
+    padding: 7px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10p
+    margin-bottom: 20px;  
+}
+
+#summarytext{
+    background-color: white;
+}
+
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Navigation Bar */
+.navbaractive {
+    font-weight: bold;
+    background-color: #48C9B0;
+    color: white;
+    font-size: 30px;
+    padding: 10px;
+}
+
+.navbar-default{
+    background-color: white;
+    color: darkslategrey;
+    padding: 0px;
+}
+
+.navbar-default .navbar-nav .active a{
+    background-color: rgb(20, 180, 164);
+    color: white;
+}
+
+/* Dropdown */
+.dropbtn {
+    background-color: rgb(20, 180, 164);
+    color: white;
+    padding: 14px;
+    font-size: 16px;
+    border: none;
+}
+  
+.dropdown {
+    float: left;
+    position: relative;
+    display: inline-block;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content a {
+    color: lightslategrey;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+  
+.dropdown-content a:hover {background-color: #ddd;}
+  
+.dropdown:hover .dropdown-content {display: block;}
+  
+.dropdown:hover .dropbtn {background-color: grey;}
+
+/* Headers */
+h1{
+    color: rgb(20, 180, 164);
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+h2{
+    color: rgb(20, 180, 164);
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+h3{
+    color: rgb(20, 180, 164);
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}    
+
+/* Landing page image */
+#landingimage{
+    float: left;
+    width: 300px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer{
+    background-color: rgb(58, 51, 51);
+    /* padding: 15px; */
+    height: 117px;
+    width: 100%;
+    border-top: 10px;
+    border-top-color: Teal;
+    border-width: 10px;
+    border-top-style: solid;
+    position: relative;
+    bottom: 0
+}
+
+.footer_font{
+    color: rgb(20, 180, 164);
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Table */
+table {
+    border-collapse: collapse;
+}
+
+th,td {
+    border: 1px solid black;
+}
+
+/* Side box  and images*/
+.side-box{
+    background: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 30px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 30px;
+    align-content: center;
+    position: relative;
+}
+
+.sidebar{
+    position: relative;
+    height: 350px;
+    width: 385px;
+    align-content: center;
+}
+
+#side-img1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 160px;
+    width: 160px;
+    border: 3px solid white;
+}
+#side-img1:hover{
+    border: 3px solid rgb(20, 180, 164);
+}
+
+#side-img2{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 160px;
+    width: 160px;
+    border: 3px solid white;
+}
+
+#side-img2:hover{
+    border: 3px solid rgb(20, 180, 164);
+}
+
+#side-img3{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 160px;
+    width: 160px;
+    border: 3px solid white;
+}
+
+#side-img3:hover{
+    border: 3px solid rgb(20, 180, 164);
+}
+
+#side-img4{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 160px;
+    width: 160px;
+    border: 3px solid white;
+}
+
+#side-img4:hover{
+    border: 3px solid rgb(20, 180, 164);
+}
+
+/* Body panels */
+.panel{
+    padding: 10px;
+    background-color: #f8f8f8;
+
+}
+
+.panel-body{
+    background-color: #f8f8f8;
+}
+
+/* Media query */
+@media (max-width: 991px) {
+        .navbar_li {
+          padding: 10px;
+        }
+      
+        .navbar_ul {
+          visibility: hidden;
+        }
+
+        .img-responsive {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+
+        h3{
+            color: rgb(20, 180, 164);
+            font-size: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+        }    
+}
